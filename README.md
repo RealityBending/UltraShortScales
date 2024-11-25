@@ -9,7 +9,7 @@ A list of ultra-short scales to use in psychological research
 ### Mood
 
 - **PHQ-4** *(4 items)*: Depression and anxiety
-  - Includes GAD-2 for anxiety 
+  - PHQ-2 for depression + GAD-2 for anxiety 
   - TODO: add refs
 - **SILS**: Single-Item Life Satisfaction Scale
   - [Jovanović & Lazić (2020)](https://link.springer.com/article/10.1007/s11482-018-9680-6), [Jovanović et al. (2020)](https://doi.org/10.1002/cpp.2434)
