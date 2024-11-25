@@ -10,11 +10,14 @@ A list of ultra-short scales to use in psychological research
 
 - **PHQ-4** *(4 items)*: Depression and anxiety
   - TODO: add refs
-- **ERQ-S** *(6 items)*: Emotion regulation strategy
 - **SILS**: Single-Item Life Satisfaction Scale
-  - Jovanović & Lazić (2020)
+  - [Jovanović & Lazić (2020)](https://link.springer.com/article/10.1007/s11482-018-9680-6), [Jovanović et al. (2020)](https://doi.org/10.1002/cpp.2434)
   
 ### Personality
 
-
 - TODO
+
+## Potential
+
+- **ERQ-S** *(6 items)*: Emotion regulation strategy
+  - [Valenti & Faraci (2025)](https://www.sciencedirect.com/science/article/pii/S0165032724017749)
