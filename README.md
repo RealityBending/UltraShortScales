@@ -31,7 +31,9 @@ A list of ultra-short scales to use in psychological research
   - TODO 
 - **SINS**: Single Item Narcissism Scale
   - [Konrath et al. (2014)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0103469)
- 
+ - **MWQ** *(5 items)*: Mind Wandering Questionnaire
+   - [Mrazek et al. 2013](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
+
 ## Potential
 
 - **uSDT** *(9 items)*: Dark Triad
