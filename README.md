@@ -36,6 +36,8 @@ A list of ultra-short scales to use in psychological research
 
 ## Potential
 
+- **PAQ-S** *(6 items)*: Alexithymia
+-   - [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
 - **uSDT** *(9 items)*: Dark Triad
   - [Wehner et al. (2021)](https://psycnet.apa.org/record/2020-85497-001)
 - **ERQ-S** *(6 items)*: Emotion regulation strategy
