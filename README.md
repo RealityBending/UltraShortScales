@@ -16,6 +16,14 @@ A list of ultra-short scales to use in psychological research
 - **CSD-2**: 2-item version of the Cambridge Depersonalization Scale
   - [Michal et al. (2011)](https://www.sciencedirect.com/science/article/pii/S0165032710004611)   
 
+### Emotion Regulation
+
+- **DERS SSF** *(6 items)*
+  - Dan-Glauser, E., & Quartier, U. M. Validation of the French Version of the 18-Item Short Difficulties in Emotion Regulation Scale (F-DERS-SF) and of a Super Short Six-Item Form (DERS-F SSF).
+- **ERQ-S** *(6 items)*
+  - [Valenti & Faraci (2025)](https://www.sciencedirect.com/science/article/pii/S0165032724017749)
+- **CERQ-Short** *(18 items)*
+  - [Saetren et al. (2024)](https://journals.sagepub.com/doi/pdf/10.1177/14034948231225616)
 
 ### Personality
 
@@ -40,8 +48,6 @@ A list of ultra-short scales to use in psychological research
 -   - [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
 - **uSDT** *(9 items)*: Dark Triad
   - [Wehner et al. (2021)](https://psycnet.apa.org/record/2020-85497-001)
-- **ERQ-S** *(6 items)*: Emotion regulation strategy
-  - [Valenti & Faraci (2025)](https://www.sciencedirect.com/science/article/pii/S0165032724017749)
 - **A-US** *(3 items)*: Authoritarianism – Ultra Short
   - [Heller et al. (2020)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.533863/full)
  
