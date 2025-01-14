@@ -29,7 +29,7 @@ A list of ultra-short scales to use in psychological research
 
 ### Interoception
 
-- [BQP-VSF] *(12 items)*
+- **BQP-VSF** *(12 items)*
   - [Brand et al. (2024)](https://journals.plos.org/mentalhealth/article?id=10.1371/journal.pmen.0000038)
 - **PAQ-S** *(6 items)*: Alexithymia
   - [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
