@@ -16,8 +16,10 @@ A list of ultra-short scales to use in psychological research
 - **CSD-2**: 2-item version of the Cambridge Depersonalization Scale
   - [Michal et al. (2011)](https://www.sciencedirect.com/science/article/pii/S0165032710004611)   
 
-### Emotion Regulation
+### Emotions
 
+- **B-ERS** *(6 items)*: emotion reactivity scale
+  - [Veilleux et al. 2024](https://link.springer.com/article/10.1007/s12144-023-05323-4)
 - **DERS SSF** *(6 items)*
   - Dan-Glauser, E., & Quartier, U. M. Validation of the French Version of the 18-Item Short Difficulties in Emotion Regulation Scale (F-DERS-SF) and of a Super Short Six-Item Form (DERS-F SSF).
 - **ERQ-S** *(6 items)*
