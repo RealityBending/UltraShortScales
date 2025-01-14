@@ -27,6 +27,13 @@ A list of ultra-short scales to use in psychological research
 - **CERQ-Short** *(18 items)*
   - [Saetren et al. (2024)](https://journals.sagepub.com/doi/pdf/10.1177/14034948231225616)
 
+### Interoception
+
+- [BQP-VSF] *(12 items)*
+  - [Brand et al. (2024)](https://journals.plos.org/mentalhealth/article?id=10.1371/journal.pmen.0000038)
+- **PAQ-S** *(6 items)*: Alexithymia
+  - [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
+
 ### Personality
 
 - **TIPI**: Ten Item Personality Inventory
@@ -44,10 +51,9 @@ A list of ultra-short scales to use in psychological research
  - **MWQ** *(5 items)*: Mind Wandering Questionnaire
    - [Mrazek et al. 2013](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
 
-## Potential
+## Other
 
-- **PAQ-S** *(6 items)*: Alexithymia
--   - [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
+
 - **uSDT** *(9 items)*: Dark Triad
   - [Wehner et al. (2021)](https://psycnet.apa.org/record/2020-85497-001)
 - **A-US** *(3 items)*: Authoritarianism – Ultra Short
