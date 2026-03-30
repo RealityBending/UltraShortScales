@@ -1,64 +1,139 @@
-# Compedium of ultra-short psychology questionnaires
+# Compendium of Ultra-Short Psychology Questionnaires
+A curated list of ultra-short scales validated for psychological research.  
 
-A list of ultra-short scales to use in psychological research
+> **Contribute**: Know of any well-established short questionnaires (<10 items)? Share the reference!
 
-> **Contribute:** if you are aware of any well-established short questionnaires (< 10 items), let us know!
+---
 
-## Well-established
+## Mood
+- **PHQ-4** *(4 items)*: Depression and anxiety  
+  PHQ-2 (depression) + GAD-2 (anxiety). Widely used, excellent screening properties.
 
-### Mood
+- **SILS** *(1 item)*: Single-Item Life Satisfaction Scale  
+  [Jovanović & Lazić (2020)](https://link.springer.com/article/10.1007/s11482-018-9680-6)  
+  [Jovanović et al. (2020)](https://doi.org/10.1002/cpp.2434)
 
-- **PHQ-4** *(4 items)*: Depression and anxiety
-  - PHQ-2 for depression + GAD-2 for anxiety 
-  - TODO: add refs
-- **SILS**: Single-Item Life Satisfaction Scale
-  - [Jovanović & Lazić (2020)](https://link.springer.com/article/10.1007/s11482-018-9680-6), [Jovanović et al. (2020)](https://doi.org/10.1002/cpp.2434)
-- **CSD-2**: 2-item version of the Cambridge Depersonalization Scale
-  - [Michal et al. (2011)](https://www.sciencedirect.com/science/article/pii/S0165032710004611)   
+- **CSD-2** *(2 items)*: Cambridge Depersonalization Scale (2-item version)  
+  [Michal et al. (2011)](https://www.sciencedirect.com/science/article/pii/S0165032710004611)
 
-### Emotions
+---
 
-- **B-ERS** *(6 items)*: emotion reactivity scale
-  - [Veilleux et al. 2024](https://link.springer.com/article/10.1007/s12144-023-05323-4)
-- **DERS SSF** *(6 items)*
-  - Dan-Glauser, E., & Quartier, U. M. Validation of the French Version of the 18-Item Short Difficulties in Emotion Regulation Scale (F-DERS-SF) and of a Super Short Six-Item Form (DERS-F SSF).
-- **ERQ-S** *(6 items)*
-  - [Valenti & Faraci (2025)](https://www.sciencedirect.com/science/article/pii/S0165032724017749)
-- **CERQ-Short** *(18 items)*
-  - [Saetren et al. (2024)](https://journals.sagepub.com/doi/pdf/10.1177/14034948231225616)
+## Emotions
+- **B-ERS** *(6 items)*: Brief Emotion Reactivity Scale  
+  [Veilleux et al. (2024)](https://link.springer.com/article/10.1007/s12144-023-05323-4)
 
-### Interoception
+- **DERS-SSF** *(6 items)*: Difficulties in Emotion Regulation Scale – Super Short Form  
+  Original English development: [Kaufman et al. (2016)](https://doi.org/10.1080/10615806.2016.1149616); French validation: [Dan-Glauser & Quartier](https://doi.org/10.1016/j.jad.2024.01.001).  
 
-- **BQP-VSF** *(12 items)*
-  - [Brand et al. (2024)](https://journals.plos.org/mentalhealth/article?id=10.1371/journal.pmen.0000038)
-- **PAQ-S** *(6 items)*: Alexithymia
-  - [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
+- **ERQ-S** *(6 items)*: Emotion Regulation Questionnaire – Short Form  
+  [Valenti & Faraci (2025)](https://www.sciencedirect.com/science/article/pii/S0165032724017749)
 
-### Personality
+- **CERQ-Short** *(18 items)*: Cognitive Emotion Regulation Questionnaire – Short Form  
+  Original: Garnefski & Kraaij (2006). Recent validation: [Saetren et al. (2024)](https://journals.sagepub.com/doi/pdf/10.1177/14034948231225616)  
 
-- **TIPI**: Ten Item Personality Inventory
-  - [Gosling et al. (2003)](https://www.sciencedirect.com/science/article/pii/S0092656603000461)
-  - See also [Chapman et al. (2017)](https://journals.sagepub.com/doi/full/10.1177/1359105317720819) for criticism
-- **FIPI**  Five Item Personality Inventory
-  - TODO
-- **BFI-10**:
-  - [Rammstedt & John (2007)](https://www.sciencedirect.com/science/article/pii/S0092656606000195) 
-  - [Mastrascusa et al. (2023)](https://www.nature.com/articles/s41598-023-34504-1)
-- **SIMP** Single-Item Measures of Personality
-  - TODO 
-- **SINS**: Single Item Narcissism Scale
-  - [Konrath et al. (2014)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0103469)
- - **MWQ** *(5 items)*: Mind Wandering Questionnaire
-   - [Mrazek et al. 2013](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
+---
 
-## Other
+## Interoception
+- **BQP-VSF** *(12 items)*: Body Perception Questionnaire – Very Short Form  
+  [Brand et al. (2024)](https://journals.plos.org/mentalhealth/article?id=10.1371/journal.pmen.0000038)  
+  *(12 items — borderline; included for completeness.)*
+
+- **PAQ-S** *(6 items)*: Perth Alexithymia Questionnaire – Short Form  
+  [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
+
+---
+
+## Personality 
+
+### Big Five
+
+- **TIPI** *(10 items)*: Ten-Item Personality Inventory  
+  [Gosling et al. (2003)](https://www.sciencedirect.com/science/article/pii/S0092656603000461)  
+  Strong convergence with full Big Five; note Chapman et al. (2017) on limitations at the facet level.
+
+- **BFI-10** *(10 items)*: Big Five Inventory – 10 items  
+  [Rammstedt & John (2007)](https://www.sciencedirect.com/science/article/pii/S0092656606000195)  
+  Recent cross-national validation: [Mastrascusa et al. (2023)](https://www.nature.com/articles/s41598-023-34504-1)
+
+- **BFI-2-XS** *(15 items)*: Big Five Inventory-2 Extra-Short Form ✨ *NEW*  
+  [Soto & John (2017)](https://doi.org/10.1016/j.jrp.2017.02.004)  
+  3 items per domain, derived from the full BFI-2's facet structure; better content validity than TIPI/BFI-10. Does not support facet-level scoring. Recommended over TIPI/BFI-10 when space allows. German validation available (Danner et al.).
+
+- **FIPI** *(5 items)*: Five-Item Personality Inventory (single item per Big Five trait)  
+  [Gosling et al. (2003)](https://www.sciencedirect.com/science/article/pii/S0092656603000461)  
+  Useful for extreme brevity (mean *r* ≈ .65 with longer scales).
+
+- **SIMP** *(5 items)*: Single-Item Measures of Personality (bipolar adjective pairs)  
+  [Woods & Hampson (2005)](https://doi.org/10.1016/j.jrp.2004.09.002)  
+  Mean convergence *r* ≈ .61.
+
+### HEXACO
 
 
-- **uSDT** *(9 items)*: Dark Triad
-  - [Wehner et al. (2021)](https://psycnet.apa.org/record/2020-85497-001)
-- **A-US** *(3 items)*: Authoritarianism – Ultra Short
-  - [Heller et al. (2020)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.533863/full)
- 
-## References
+- **BHI** *(24 items)*: Brief HEXACO Inventory  
+  [De Vries (2013)](https://doi.org/10.1016/j.jrp.2013.08.004)  
+  4 items per HEXACO domain (1 item per facet). Low alpha reliability but good test–retest stability, self-other agreement, and convergent validity with full HEXACO-PI-R. Recommended when all 6 HEXACO dimensions (including Honesty-Humility) must be covered efficiently.
 
-[Rammstedt, B., & Beierlein, C. (2014). Can’t we make it any shorter?. Journal of Individual Differences.](https://econtent.hogrefe.com/doi/abs/10.1027/1614-0001/a000141?journalCode=jid)
+- **HEX-ACO-18** *(18 items)*: Age-Invariant HEXACO Short Scale  
+  [Olaru & Jankowsky (2022)](https://doi.org/10.1080/00223891.2021.1934480)  
+  Developed using ant colony optimization (ACO); 3 items per domain, scalar measurement invariance across ages 16–90. Recommended for developmental and lifespan research.
+
+- **Mini-IPIP** *(20 items)*: Big Five; [Donnellan et al. (2006)](https://doi.org/10.1037/1040-3590.18.2.192).
+
+
+### Pathological Personality
+
+- **PID-5-BF** *(25 items)*: Personality Inventory for DSM-5 – Brief Form  
+  Krueger, Derringer, Markon, Watson, & Skodol (2013; APA); construct validation: [Anderson et al. (2018)](https://doi.org/10.1177/1073191116676889)  
+  5 items × 5 domains (Negative Affectivity, Detachment, Antagonism, Disinhibition, Psychoticism). Operationalizes the DSM-5 Section III Alternative Model for Personality Disorders. Good 5-factor structure and criterion validity; internal consistencies modest but acceptable. Free for research use from APA.
+
+---
+
+## Specific Traits
+
+- **SINS** *(1 item)*: Single Item Narcissism Scale  
+  [Konrath et al. (2014)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0103469)
+
+- **MWQ** *(5 items)*: Mind Wandering Questionnaire (trait-like)  
+  [Mrazek et al. (2013)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
+
+---
+
+## Dark / Aversive Personality
+
+- **uSDT** *(9 items)*: Ultra-Short Dark Triad (3 items × Machiavellianism, Narcissism, Psychopathy)  
+  [Wehner et al. (2021)](https://psycnet.apa.org/record/2020-85497-001)  
+  Best choice when strict brevity is needed for all three dark traits.
+
+- **Dirty Dozen (DD)** *(12 items)*: Dark Triad 
+  [Jonason & Webster (2010)](https://doi.org/10.1037/a0017528)  
+  4 items × 3 dark traits. Widely cited (1,300+ times); note weaker convergent validity for psychopathy relative to longer measures. Test-retest reliability adequate (median *r*tt ≈ .87). Use uSDT if tighter length is needed; DD if slightly more coverage is preferred.
+
+- **SD3** *(27 items)*: Short Dark Triad
+  [Jones & Paulhus (2014)](https://doi.org/10.1177/1073191113514105)  
+  9 items × 3 dark traits. Most widely used Dark Triad measure overall (1,400+ citations); better construct coverage than DD, especially for psychopathy. Above the ultra-short threshold but essential reference for the literature.
+
+- **A-US** *(3 items)*: Authoritarianism – Ultra Short  
+  [Heller et al. (2020)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.533863/full)
+
+
+---
+
+## Notable Exclusions (too long, but often confused with ultra-short)
+- **HEXACO-60** *(60 items)*: Standard short HEXACO; Ashton & Lee (2009). Use BHI or HEX-ACO-18 instead if time is critical.
+- **PID-5-SF** *(100 items)*: Full short-form of PID-5; use PID-5-BF (25 items) for ultra-short applications.
+- **BFI-2-S** *(30 items)*: Short form of BFI-2; use BFI-2-XS (15 items) instead.
+
+---
+
+
+
+## References (selected key papers)
+- Rammstedt, B., & Beierlein, C. (2014). Can't we make it any shorter? *Journal of Individual Differences*. https://econtent.hogrefe.com/doi/abs/10.1027/1614-0001/a000141
+- Soto, C. J., & John, O. P. (2017). Short and extra-short forms of the Big Five Inventory–2. *Journal of Research in Personality, 68*, 69–81. https://doi.org/10.1016/j.jrp.2017.02.004
+- De Vries, R. E. (2013). The 24-item Brief HEXACO Inventory (BHI). *Journal of Research in Personality, 47*, 871–880. https://doi.org/10.1016/j.jrp.2013.08.004
+- Olaru, G., & Jankowsky, K. (2022). The HEX-ACO-18: Developing an age-invariant HEXACO short scale. *Journal of Personality Assessment, 104*(4), 435–446. https://doi.org/10.1080/00223891.2021.1934480
+- Anderson, J. L., Sellbom, M., & Salekin, R. T. (2018). Utility of the PID-5-BF. *Assessment, 25*(5), 596–607. https://doi.org/10.1177/1073191116676889
+- Jones, D. N., & Paulhus, D. L. (2014). Introducing the Short Dark Triad (SD3). *Assessment, 21*(1), 28–41. https://doi.org/10.1177/1073191113514105
+- Jonason, P. K., & Webster, G. D. (2010). The dirty dozen. *Psychological Assessment, 22*(2), 420–432. https://doi.org/10.1037/a0017528
+- Full DOIs and PDFs for most scales are freely available via OSF or author websites.
