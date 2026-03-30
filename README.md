@@ -1,9 +1,7 @@
 # Compendium of Ultra-Short Psychology Questionnaires
 A curated list of ultra-short scales validated for psychological research.  
 
-> **Contribute**: Know of any well-established short questionnaires (<10 items)? Share the reference!
-
----
+> **Contribute**: Know of any well-established short questionnaires? Share the reference!
 
 ## Mood
 - **PHQ-4** *(4 items)*: Depression and anxiety  
@@ -16,7 +14,6 @@ A curated list of ultra-short scales validated for psychological research.
 - **CSD-2** *(2 items)*: Cambridge Depersonalization Scale (2-item version)  
   [Michal et al. (2011)](https://www.sciencedirect.com/science/article/pii/S0165032710004611)
 
----
 
 ## Emotions
 - **B-ERS** *(6 items)*: Brief Emotion Reactivity Scale  
@@ -31,7 +28,6 @@ A curated list of ultra-short scales validated for psychological research.
 - **CERQ-Short** *(18 items)*: Cognitive Emotion Regulation Questionnaire – Short Form  
   Original: Garnefski & Kraaij (2006). Recent validation: [Saetren et al. (2024)](https://journals.sagepub.com/doi/pdf/10.1177/14034948231225616)  
 
----
 
 ## Interoception
 - **BQP-VSF** *(12 items)*: Body Perception Questionnaire – Very Short Form  
@@ -41,7 +37,6 @@ A curated list of ultra-short scales validated for psychological research.
 - **PAQ-S** *(6 items)*: Perth Alexithymia Questionnaire – Short Form  
   [Preece et al. (2023)](https://www.sciencedirect.com/science/article/pii/S0165032723000460)
 
----
 
 ## Personality 
 
@@ -67,6 +62,10 @@ A curated list of ultra-short scales validated for psychological research.
   [Woods & Hampson (2005)](https://doi.org/10.1016/j.jrp.2004.09.002)  
   Mean convergence *r* ≈ .61.
 
+- **Mini-IPIP** *(20 items)*: Big Five; [Donnellan et al. (2006)](https://doi.org/10.1037/1040-3590.18.2.192).
+
+
+
 ### HEXACO
 
 
@@ -78,8 +77,7 @@ A curated list of ultra-short scales validated for psychological research.
   [Olaru & Jankowsky (2022)](https://doi.org/10.1080/00223891.2021.1934480)  
   Developed using ant colony optimization (ACO); 3 items per domain, scalar measurement invariance across ages 16–90. Recommended for developmental and lifespan research.
 
-- **Mini-IPIP** *(20 items)*: Big Five; [Donnellan et al. (2006)](https://doi.org/10.1037/1040-3590.18.2.192).
-
+- **Mini-IPIP6**: TODO 
 
 ### Pathological Personality
 
@@ -87,7 +85,7 @@ A curated list of ultra-short scales validated for psychological research.
   Krueger, Derringer, Markon, Watson, & Skodol (2013; APA); construct validation: [Anderson et al. (2018)](https://doi.org/10.1177/1073191116676889)  
   5 items × 5 domains (Negative Affectivity, Detachment, Antagonism, Disinhibition, Psychoticism). Operationalizes the DSM-5 Section III Alternative Model for Personality Disorders. Good 5-factor structure and criterion validity; internal consistencies modest but acceptable. Free for research use from APA.
 
----
+
 
 ## Specific Traits
 
@@ -97,7 +95,7 @@ A curated list of ultra-short scales validated for psychological research.
 - **MWQ** *(5 items)*: Mind Wandering Questionnaire (trait-like)  
   [Mrazek et al. (2013)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
 
----
+
 
 ## Dark / Aversive Personality
 
@@ -116,15 +114,17 @@ A curated list of ultra-short scales validated for psychological research.
 - **A-US** *(3 items)*: Authoritarianism – Ultra Short  
   [Heller et al. (2020)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2020.533863/full)
 
+- **SD4-VSF** *(16 items)*: Very Short Form of the Short Dark Tetrad  
+  (Dark Tetrad: Machiavellianism, Narcissism, Psychopathy, Sadism)  
+  [Akat (2025)](https://doi.org/10.31577/sp.2025.02.916)  
+  Promising new brief derivative of the SD4. Early evidence is encouraging, but replication is still limited.  
 
----
 
 ## Notable Exclusions (too long, but often confused with ultra-short)
 - **HEXACO-60** *(60 items)*: Standard short HEXACO; Ashton & Lee (2009). Use BHI or HEX-ACO-18 instead if time is critical.
 - **PID-5-SF** *(100 items)*: Full short-form of PID-5; use PID-5-BF (25 items) for ultra-short applications.
 - **BFI-2-S** *(30 items)*: Short form of BFI-2; use BFI-2-XS (15 items) instead.
 
----
 
 
 
