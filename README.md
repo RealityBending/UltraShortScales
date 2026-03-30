@@ -87,18 +87,11 @@ A curated list of ultra-short scales validated for psychological research.
 
 
 
-## Specific Traits
+## Dark Personality
 
 - **SINS** *(1 item)*: Single Item Narcissism Scale  
   [Konrath et al. (2014)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0103469)
-
-- **MWQ** *(5 items)*: Mind Wandering Questionnaire (trait-like)  
-  [Mrazek et al. (2013)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
-
-
-
-## Dark / Aversive Personality
-
+  
 - **uSDT** *(9 items)*: Ultra-Short Dark Triad (3 items × Machiavellianism, Narcissism, Psychopathy)  
   [Wehner et al. (2021)](https://psycnet.apa.org/record/2020-85497-001)  
   Best choice when strict brevity is needed for all three dark traits.
@@ -118,6 +111,15 @@ A curated list of ultra-short scales validated for psychological research.
   (Dark Tetrad: Machiavellianism, Narcissism, Psychopathy, Sadism)  
   [Akat (2025)](https://doi.org/10.31577/sp.2025.02.916)  
   Promising new brief derivative of the SD4. Early evidence is encouraging, but replication is still limited.  
+
+
+
+## Others
+
+
+
+- **MWQ** *(5 items)*: Mind Wandering Questionnaire (trait-like)  
+  [Mrazek et al. (2013)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
 
 
 ## Notable Exclusions (too long, but often confused with ultra-short)
