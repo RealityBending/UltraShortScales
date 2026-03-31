@@ -10,6 +10,12 @@ A curated list of ultra-short scales validated for psychological research.
 - **SILS** *(1 item)*: Single-Item Life Satisfaction Scale  
   [Jovanović & Lazić (2020)](https://link.springer.com/article/10.1007/s11482-018-9680-6)  
   [Jovanović et al. (2020)](https://doi.org/10.1002/cpp.2434)
+  - *"All things considered, how satisfied are you with your life as a whole?"* (0 = totally dissatisfied to 10 = totally satisfied).
+
+- **SHS-1** *(1 item)*: Single-Item Happiness Scale  
+    - *"In general, how happy or unhappy do you usually feel?" (Scored on an 11-point scale from 0 = extremely unhappy to 10 = extremely happy).*
+  [Abdel-Khalek (2006)](https://doi.org/10.1007/s11205-005-8632-0)  
+  Demonstrated high test-retest reliability (.86) and strong concurrent validity with the Oxford Happiness Inventory and the subjective well-being literature.
 
 - **CSD-2** *(2 items)*: Cambridge Depersonalization Scale (2-item version)  
   [Michal et al. (2011)](https://www.sciencedirect.com/science/article/pii/S0165032710004611)
@@ -27,6 +33,13 @@ A curated list of ultra-short scales validated for psychological research.
 
 - **CERQ-Short** *(18 items)*: Cognitive Emotion Regulation Questionnaire – Short Form  
   Original: Garnefski & Kraaij (2006). Recent validation: [Saetren et al. (2024)](https://journals.sagepub.com/doi/pdf/10.1177/14034948231225616)  
+
+- **CD-RISC-2** *(2 items)*: Connor-Davidson Resilience Scale 2  
+    - *1. "I am able to adapt when changes occur."*
+    - *2. "I tend to bounce back after illness, injury, or other hardships."*
+    *(Scored on a 5-point scale from 0 = not true at all to 4 = true nearly all the time).*
+  [Vaishnavi et al. (2007)](https://doi.org/10.1016/j.psychres.2007.01.006)  
+  Derived from the 25-item original, this is an extremely popular, heavily validated measure of "bounce-back" adaptability that demonstrates excellent test-retest reliability and convergent validity.
 
 
 ## Interoception
@@ -50,13 +63,18 @@ A curated list of ultra-short scales validated for psychological research.
   [Rammstedt & John (2007)](https://www.sciencedirect.com/science/article/pii/S0092656606000195)  
   Recent cross-national validation: [Mastrascusa et al. (2023)](https://www.nature.com/articles/s41598-023-34504-1)
 
-- **BFI-2-XS** *(15 items)*: Big Five Inventory-2 Extra-Short Form ✨ *NEW*  
+- **BFI-2-XS** *(15 items)*: Big Five Inventory-2 Extra-Short Form
   [Soto & John (2017)](https://doi.org/10.1016/j.jrp.2017.02.004)  
   3 items per domain, derived from the full BFI-2's facet structure; better content validity than TIPI/BFI-10. Does not support facet-level scoring. Recommended over TIPI/BFI-10 when space allows. German validation available (Danner et al.).
 
 - **FIPI** *(5 items)*: Five-Item Personality Inventory (single item per Big Five trait)  
   [Gosling et al. (2003)](https://www.sciencedirect.com/science/article/pii/S0092656603000461)  
-  Useful for extreme brevity (mean *r* ≈ .65 with longer scales).
+  Useful for extreme brevity (mean *r* ≈ .65 with longer scales). Each item is preceded by the prompt *"I see myself as:"* and scored on a 7-point Likert scale (1 = disagree strongly to 7 = agree strongly).
+    - *1. Extraverted, enthusiastic (that is, sociable, assertive, talkative, active, NOT reserved or shy)*
+    - *2. Agreeable, kind (that is, trusting, generous, sympathetic, cooperative, NOT aggressive or cold)*
+    - *3. Dependable, organized (that is, hard-working, responsible, self-disciplined, thorough, NOT careless or impulsive)*
+    - *4. Emotionally stable, calm (that is, relaxed, self-confident, NOT anxious, moody, easily upset, or easily stressed)*
+    - *5. Open to experience, imaginative (that is, curious, reflective, creative, deep, open-minded, NOT conventional)*
 
 - **SIMP** *(5 items)*: Single-Item Measures of Personality (bipolar adjective pairs)  
   [Woods & Hampson (2005)](https://doi.org/10.1016/j.jrp.2004.09.002)  
@@ -91,6 +109,7 @@ A curated list of ultra-short scales validated for psychological research.
 
 - **SINS** *(1 item)*: Single Item Narcissism Scale  
   [Konrath et al. (2014)](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0103469)
+    - *"To what extent do you agree with this statement: I am a narcissist. (Note: The word 'narcissist' means egotistical, self-focused, and vain.)."*
   
 - **uSDT** *(9 items)*: Ultra-Short Dark Triad (3 items × Machiavellianism, Narcissism, Psychopathy)  
   [Wehner et al. (2021)](https://psycnet.apa.org/record/2020-85497-001)  
@@ -112,14 +131,43 @@ A curated list of ultra-short scales validated for psychological research.
   [Akat (2025)](https://doi.org/10.31577/sp.2025.02.916)  
   Promising new brief derivative of the SD4. Early evidence is encouraging, but replication is still limited.  
 
+## Health, Stress, and Sleep
 
+- **SQS** *(1 item)*: Single-Item Sleep Quality Scale  
+    - *"During the past 7 days, how would you rate your sleep quality overall?" (Scored on a 0–10 scale, where 0 = terrible and 10 = excellent).*
+  [Snyder et al. (2018)](https://doi.org/10.5664/jcsm.7498)  
+  Possesses excellent concurrent criterion validity and tracks well with longer scales like the Pittsburgh Sleep Quality Index (PSQI) while significantly reducing participant burden in daily diary or clinical trials.
+
+- **SIMS** *(1 item)*: Single-Item Measure of Stress Symptoms  
+    - *"Stress means a situation in which a person feels tense, restless, nervous or anxious or is unable to sleep at night because his/her mind is troubled all the time. Do you feel this kind of stress these days?" (Scored on a 1 to 5 Likert scale from "not at all" to "very much").*
+  [Elo et al. (2003)](https://www.sjweh.fi/article/758)  
+  Widely used in occupational health and population studies; validated extensively in Scandinavian public health tracking and clinical populations.
+
+- **SRH** *(1 item)*: Self-Rated Health  
+    - *"In general, would you say your health is: Excellent, Very good, Good, Fair, or Poor?"*
+  [DeSalvo et al. (2006)](https://doi.org/10.1111/j.1525-1497.2005.00293.x) / [Idler & Benyamini (1997)](https://doi.org/10.2307/2137286)  
+  Perhaps the most thoroughly validated single item in epidemiology and psychology. Consistently shown to be an independent predictor of mortality and morbidity, often outperforming comprehensive medical examinations.
 
 ## Others
 
-
-
 - **MWQ** *(5 items)*: Mind Wandering Questionnaire (trait-like)  
   [Mrazek et al. (2013)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2013.00560/)
+  
+- **GJS** *(1 item)*: Global Job Satisfaction  
+    - *"Overall, how satisfied are you with your job?" (Scored on varying Likert scales).*
+  [Wanous et al. (1997)](https://doi.org/10.1037/0021-9010.82.2.247)  
+  A landmark meta-analysis (28 correlations, 7,682 individuals) demonstrated that a single-item measure of global job satisfaction strongly correlates (mean *r* = .67) with multi-item scales, concluding it is highly acceptable and robust for organizational research.
+
+- **MacArthur SSS** *(1 item)*: MacArthur Scale of Subjective Social Status  
+    - *"Think of this ladder as representing where people stand in our society. At the top of the ladder are the people who are the best off—those who have the most money, the most education and the most respected jobs. At the bottom are the people who are the worst off... Where would you place yourself on this ladder?" (Scored visually from 1 to 10 on a drawing of a ladder).*
+  [Adler et al. (2000)](https://doi.org/10.1037/0278-6133.19.6.586)  
+  A foundational 1-item sociodemographic measure in health psychology and epidemiology. It frequently predicts physical and mental health outcomes better than objective SES measures (like actual income or education level).
+
+- **PHCS-2** *(2 items)*: Perceived Health Competence Scale – Short Form  
+    - *1. "It is difficult for me to find effective solutions to the health problems that come my way." (Reverse-scored)*
+    - *2. "I am able to do things for my health as well as most other people."*
+  [Original: Smith et al. (1995); Short Form: Ehlers et al. (2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12618744/)  
+  Assesses domain-specific self-efficacy focused on health management. Highly predictive of behaviors like physical activity and medical rehabilitation enrollment.
 
 
 ## Notable Exclusions (too long, but often confused with ultra-short)
