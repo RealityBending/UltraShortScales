@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UltraShort Scales Compendium</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <div class="header-title">
+                <h1>Ultrashort Psychological Scales</h1>
+                <p class="header-subtitle">
+                    A Compendium of Validated Brief Measures (<a
+                        href="https://github.com/RealityBending/UltraShortScales"
+                        target="_blank"
+                        rel="noopener"
+                        >Makowski., 2026</a
+                    >)
+                </p>
+            </div>
+            <div class="header-right">
+                <input type="search" id="search-input" placeholder="Search scales…" autocomplete="off" />
+                <button id="btn-expand-all">Expand all</button>
+                <button id="btn-collapse-all">Collapse all</button>
+                <a class="btn-suggest" href="https://github.com/RealityBending/UltraShortScales/issues" target="_blank" rel="noopener"
+                    >✦ Suggest improvements</a
+                >
+            </div>
+        </header>
+
+        <div class="layout">
+            <div class="panel-left" id="panel-left">
+                <table id="compendium-table">
+                    <thead>
+                        <tr>
+                            <th class="col-name">Scale</th>
+                            <th class="col-n" title="Number of items">N</th>
+                            <th class="col-scale">Response Scale</th>
+                            <th class="col-dims">Dimensions</th>
+                            <th class="col-refs">References</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="panel-right" id="panel-right">
+                <div class="right-placeholder">
+                    <div class="placeholder-glyph">⬡</div>
+                    <p class="placeholder-label">Network visualization</p>
+                    <p class="placeholder-sub">Coming soon</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="content.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this compendium, please cite it as below."
+authors:
+    - family-names: Makowski
+      given-names: Dominique
+title: "Ultrashort Psychological Scales: A Compendium of Validated Brief Measures"
+version: "1.0.0"
+date-released: "2026-04-01"
+url: "https://github.com/RealityBending/UltraShortScales"
+repository-code: "https://github.com/RealityBending/UltraShortScales"
+license: MIT
+abstract: >
+    A curated, open-access compendium of ultra-short psychological measurement
+    instruments spanning clinical, personality, social, and occupational domains.
+    Each entry includes item text, dimension structure, scale information, and
+    key validation references.
+keywords:
+    - psychology
+    - measurement
+    - ultra-short scales
+    - questionnaires
+    - psychometrics
