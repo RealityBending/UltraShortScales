@@ -768,10 +768,10 @@ var questionnaireCompendium = [
                 ],
             },
             {
-                category: "Maladaptive and Antagonistic Traits",
+                category: "Maladaptive, Pathological and Antagonistic Traits",
                 groups: [
                     {
-                        group: "Maladaptive, antagonistic, and dark personality",
+                        group: "Pathological personality",
                         measures: [
                             {
                                 name: "Personality Inventory for DSM-5 – Brief Form",
@@ -789,6 +789,11 @@ var questionnaireCompendium = [
                                     { name: "Psychoticism", items: [] },
                                 ],
                             },
+                        ],
+                    },
+                    {
+                        group: "Dark personality",
+                        measures: [
                             {
                                 name: "Single Item Narcissism Scale",
                                 short_name: "SINS",

@@ -752,25 +752,53 @@ function getNodeSize(node, isCenter) {
     return sizes[node?.type || "root"]
 }
 
-function buildOrbitPositions(count, centerX, centerY, baseRadius, ringGap, maxPerRing) {
-    const positions = []
-    let remaining = count
-    let ringIndex = 0
-    let cursor = 0
+function getNodeFootprint(size) {
+    return Math.max(size.w, size.h)
+}
 
-    while (remaining > 0) {
-        const ringCount = Math.min(maxPerRing + ringIndex * 2, remaining)
-        const radius = baseRadius + ringIndex * ringGap
+function getRingStartAngle(ringCount, ringIndex) {
+    if (ringCount === 1) return -Math.PI / 2
+    if (ringCount === 2) return 0
+    if (ringCount === 3) return -Math.PI / 2
+    if (ringCount === 4) return -Math.PI / 4
+    return -Math.PI / 2 + (ringIndex % 2 === 0 ? 0 : Math.PI / Math.max(ringCount, 1))
+}
+
+function buildOrbitPositions(nodes, centerX, centerY, baseRadius, ringGap, stageWidth, stageHeight) {
+    const positions = []
+    if (!nodes.length) return positions
+
+    const nodeSizes = nodes.map((node) => getNodeSize(node, false))
+    const maxHalfWidth = Math.max(...nodeSizes.map((size) => size.w / 2))
+    const maxHalfHeight = Math.max(...nodeSizes.map((size) => size.h / 2))
+    const maxRadius = Math.max(0, Math.min(stageWidth / 2 - maxHalfWidth - 20, stageHeight / 2 - maxHalfHeight - 20))
+
+    let cursor = 0
+    let ringIndex = 0
+    let nextRadius = Math.min(baseRadius, maxRadius || baseRadius)
+
+    while (cursor < nodes.length) {
+        const remaining = nodes.length - cursor
+        const remainingSizes = nodeSizes.slice(cursor)
+        const ringFootprint = Math.max(...remainingSizes.map((size) => getNodeFootprint(size)))
+        const minArcSpacing = ringFootprint + 28
+        const radius = Math.min(maxRadius || nextRadius, Math.max(nextRadius, (3 * minArcSpacing) / (2 * Math.PI)))
+        const circumference = 2 * Math.PI * Math.max(radius, 1)
+        const capacity = Math.max(1, Math.floor(circumference / minArcSpacing))
+        const ringCount = Math.min(remaining, capacity)
+        const startAngle = getRingStartAngle(ringCount, ringIndex)
+
         for (let i = 0; i < ringCount; i++) {
-            const angleOffset = ringIndex % 2 === 0 ? 0 : Math.PI / Math.max(ringCount, 1)
-            const angle = -Math.PI / 2 + angleOffset + (2 * Math.PI * i) / ringCount
-            positions[cursor++] = {
+            const angle = startAngle + (2 * Math.PI * i) / ringCount
+            positions.push({
                 x: centerX + radius * Math.cos(angle),
                 y: centerY + radius * Math.sin(angle),
-            }
+            })
         }
-        remaining -= ringCount
+
+        cursor += ringCount
         ringIndex++
+        nextRadius = radius + ringGap
     }
 
     return positions
@@ -1043,7 +1071,18 @@ function renderNetwork() {
         core.style.top = `${centerY}px`
         nodesLayer.appendChild(core)
 
-        const positions = buildOrbitPositions(visibleChildren.length, centerX, centerY, Math.max(sizeUnit * 0.16, 110), 86, 6)
+        const maxChildWidth = Math.max(...visibleChildren.map((node) => getNodeSize(node, false).w))
+        const maxChildHeight = Math.max(...visibleChildren.map((node) => getNodeSize(node, false).h))
+        const maxChildFootprint = Math.max(...visibleChildren.map((node) => getNodeFootprint(getNodeSize(node, false))))
+        const positions = buildOrbitPositions(
+            visibleChildren,
+            centerX,
+            centerY,
+            Math.max(sizeUnit * 0.16, 110, 62 + maxChildWidth / 2 + 40, 62 + maxChildHeight / 2 + 40),
+            Math.max(86, Math.round(maxChildFootprint * 0.78)),
+            width,
+            height,
+        )
         visibleChildren.forEach((node, index) => {
             const nodeEl = document.createElement("button")
             const size = getNodeSize(node, false)
@@ -1097,13 +1136,23 @@ function renderNetwork() {
     centerEl.addEventListener("click", () => handleNetworkNodeClick(focusNode.id))
     nodesLayer.appendChild(centerEl)
 
+    const maxChildWidth = visibleChildren.length > 0 ? Math.max(...visibleChildren.map((node) => getNodeSize(node, false).w)) : 0
+    const maxChildHeight = visibleChildren.length > 0 ? Math.max(...visibleChildren.map((node) => getNodeSize(node, false).h)) : 0
+    const maxChildFootprint =
+        visibleChildren.length > 0 ? Math.max(...visibleChildren.map((node) => getNodeFootprint(getNodeSize(node, false)))) : 0
     const positions = buildOrbitPositions(
-        visibleChildren.length,
+        visibleChildren,
         centerX,
         centerY,
-        Math.max(sizeUnit * (focusNode.type === "measure" ? 0.28 : 0.24), 125),
-        88,
-        focusNode.type === "dimension" ? 7 : 6,
+        Math.max(
+            sizeUnit * (focusNode.type === "measure" ? 0.28 : 0.24),
+            125,
+            centerSize.w / 2 + maxChildWidth / 2 + 44,
+            centerSize.h / 2 + maxChildHeight / 2 + 44,
+        ),
+        Math.max(88, Math.round(maxChildFootprint * 0.8)),
+        width,
+        height,
     )
 
     visibleChildren.forEach((node, index) => {
