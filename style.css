@@ -235,29 +235,30 @@ header h1 {
 
 /* Domain 0 – Teal (Clinical / Health) */
 .dom-0.row-domain > td {
-    background: #0d4e4a;
+    background: hsl(175, 70%, 20%);
 }
 .dom-0.row-domain:hover > td {
-    background: #135f5a;
+    background: hsl(175, 70%, 26%);
 }
-/* Domain 1 – Violet (Personality / Cognition) */
+/* Domain 1 – Purple (Personality / Cognition) */
 .dom-1.row-domain > td {
-    background: #2e1065;
+    background: hsl(295, 55%, 22%);
 }
 .dom-1.row-domain:hover > td {
-    background: #3d1580;
+    background: hsl(295, 55%, 28%);
 }
-/* Domain 2 – Amber (Social / Occupational) */
+/* Domain 2 – Gold (Social / Occupational) */
 .dom-2.row-domain > td {
-    background: #5c1e00;
+    background: hsl(55, 70%, 22%);
 }
 .dom-2.row-domain:hover > td {
-    background: #7a2800;
+    background: hsl(55, 70%, 28%);
 }
 
 /* ── Category rows ── */
 
 .row-category > td {
+    background: var(--cat-bg, #555);
     color: rgba(255, 255, 255, 0.95);
     padding: 8px 16px 8px 36px;
     font-weight: 600;
@@ -265,23 +266,8 @@ header h1 {
     user-select: none;
 }
 
-.dom-0.row-category > td {
-    background: #0f766e;
-}
-.dom-0.row-category:hover > td {
-    background: #14897f;
-}
-.dom-1.row-category > td {
-    background: #6d28d9;
-}
-.dom-1.row-category:hover > td {
-    background: #7c31ed;
-}
-.dom-2.row-category > td {
-    background: #c2410c;
-}
-.dom-2.row-category:hover > td {
-    background: #d4511a;
+.row-category:hover > td {
+    background: var(--cat-hov, #666);
 }
 
 /* ── Group rows ── */
@@ -319,13 +305,13 @@ header h1 {
 }
 
 .dom-0 > td.col-n {
-    color: #0f766e;
+    color: hsl(175, 65%, 30%);
 }
 .dom-1 > td.col-n {
-    color: #6d28d9;
+    color: hsl(295, 55%, 38%);
 }
 .dom-2 > td.col-n {
-    color: #c2410c;
+    color: hsl(55, 65%, 28%);
 }
 
 .row-measure > td.col-scale,
@@ -379,16 +365,16 @@ header h1 {
 }
 
 .dom-0.row-detail > td {
-    background: #f0fdfa;
-    border-bottom-color: #99f6e4;
+    background: hsl(175, 60%, 97%);
+    border-bottom-color: hsl(175, 55%, 85%);
 }
 .dom-1.row-detail > td {
-    background: #faf5ff;
-    border-bottom-color: #ddd6fe;
+    background: hsl(295, 60%, 97%);
+    border-bottom-color: hsl(295, 55%, 85%);
 }
 .dom-2.row-detail > td {
-    background: #fff8f0;
-    border-bottom-color: #fed7aa;
+    background: hsl(55, 70%, 97%);
+    border-bottom-color: hsl(55, 65%, 85%);
 }
 
 .detail-content {
@@ -481,18 +467,8 @@ header h1 {
     margin-right: 4px;
 }
 
-.dom-0.row-group .toggle-icon {
-    color: #134e4a;
-    opacity: 0.55;
-    margin-right: 4px;
-}
-.dom-1.row-group .toggle-icon {
-    color: #2e1065;
-    opacity: 0.55;
-    margin-right: 4px;
-}
-.dom-2.row-group .toggle-icon {
-    color: #7c2d12;
+.row-group .toggle-icon {
+    color: var(--g-txt);
     opacity: 0.55;
     margin-right: 4px;
 }

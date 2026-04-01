@@ -36,18 +36,12 @@ function formatRefs(refs) {
 function buildTable() {
     const tbody = document.querySelector("#compendium-table tbody")
 
-    // Global item range for gradient + per-domain hues (spaced ~120° apart)
-    const DOMAIN_HUES = [175, 268, 28]
-    // Track group index per domain across all categories (for hue variation)
-    const domGroupIdx = {}
-    const allItems = questionnaireCompendium.flatMap((d) =>
-        d.categories.flatMap((c) => c.groups.flatMap((g) => g.measures.map((m) => m.total_items || 1))),
-    )
-    const minItems = Math.min(...allItems)
-    const maxItems = Math.max(...allItems)
+    // Domain hues spaced 120° apart for maximum chromatic distinction
+    const DOMAIN_HUES = [175, 295, 55]
 
     questionnaireCompendium.forEach((domain, di) => {
         const domainId = `d${di}`
+        const domH = DOMAIN_HUES[di % DOMAIN_HUES.length]
 
         // Domain row — visible and expanded by default
         const dRow = document.createElement("tr")
@@ -64,6 +58,9 @@ function buildTable() {
 
         domain.categories.forEach((cat, ci) => {
             const catId = `d${di}c${ci}`
+            // Category hue: gradient ±15° around domain hue across all categories
+            const numCats = domain.categories.length
+            const catH = domH + (ci - (numCats - 1) / 2) * (30 / Math.max(numCats - 1, 1))
 
             // Category row — visible (domain expanded), collapsed
             const cRow = document.createElement("tr")
@@ -71,6 +68,7 @@ function buildTable() {
             cRow.dataset.id = catId
             cRow.dataset.parent = domainId
             cRow.dataset.level = "1"
+            cRow.style.cssText = `--cat-bg:hsl(${catH},60%,35%);--cat-hov:hsl(${catH},60%,42%);`
             cRow.innerHTML = `<td colspan="5">
                 <span class="toggle-icon">▶</span>
                 <span class="row-label">${escHtml(cat.category)}</span>
@@ -83,10 +81,9 @@ function buildTable() {
                 const groupId = `d${di}c${ci}g${gi}`
 
                 // Group row — hidden until category expanded
-                // Compute per-domain group index for hue variation
-                const domGi = (domGroupIdx[di] = domGroupIdx[di] ?? 0)
-                domGroupIdx[di]++
-                const gh = DOMAIN_HUES[di % DOMAIN_HUES.length] + domGi * 22
+                // Groups use same hue as category, progressively darker lightness
+                const numGroups = cat.groups.length
+                const gBgL = numGroups > 1 ? Math.round(88 - gi * (12 / (numGroups - 1))) : 84
                 const gRow = document.createElement("tr")
                 gRow.className = `row-group dom-${di}`
                 gRow.dataset.id = groupId
@@ -94,10 +91,10 @@ function buildTable() {
                 gRow.dataset.level = "2"
                 gRow.style.cssText =
                     [
-                        `--g-bg: hsl(${gh},55%,88%)`,
-                        `--g-txt: hsl(${gh},75%,22%)`,
-                        `--g-bdr: hsl(${gh},50%,75%)`,
-                        `--g-hov: hsl(${gh},55%,80%)`,
+                        `--g-bg:hsl(${catH},45%,${gBgL}%)`,
+                        `--g-txt:hsl(${catH},70%,22%)`,
+                        `--g-bdr:hsl(${catH},40%,${gBgL - 8}%)`,
+                        `--g-hov:hsl(${catH},45%,${gBgL - 6}%)`,
                         "display:none",
                     ].join(";") + ";"
                 gRow.innerHTML = `<td colspan="5">
@@ -125,10 +122,8 @@ function buildTable() {
                     mRow.dataset.level = "3"
                     mRow.style.display = "none"
 
-                    // Gradient: light (few items) → more saturated (many items), keyed to domain hue
-                    const hue = DOMAIN_HUES[di % DOMAIN_HUES.length]
-                    const t = (measure.total_items - minItems) / (maxItems - minItems || 1)
-                    mRow.style.setProperty("--measure-bg", `hsl(${hue}, ${Math.round(15 + t * 42)}%, ${Math.round(97 - t * 17)}%)`)
+                    // All measures share a uniform light pastel of the domain hue
+                    mRow.style.setProperty("--measure-bg", `hsl(${domH}, 20%, 97%)`)
 
                     const shortTag = measure.short_name ? `<span class="short-name">${escHtml(measure.short_name)}</span>` : ""
                     const toggleEl = hasDetail ? '<span class="toggle-icon">▶</span>' : '<span class="toggle-placeholder"></span>'
