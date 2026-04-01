@@ -409,6 +409,26 @@ var questionnaireCompendium = [
                         group: "Uncertainty, ambiguity, control, and mindset",
                         measures: [
                             {
+                                name: "Intolerance of Uncertainty Scale - 4 Item",
+                                short_name: "IUS-4",
+                                total_items: 4,
+                                instructions: "Please rate the extent to which you agree with each of the following statements.",
+                                scale: "6-point Likert (1 = Strongly disagree to 6 = Strongly agree)",
+                                references: ["Valencia et al. (2025)"],
+                                notes: "Ultra-brief, unidimensional version of the IUS derived from the IUS-12. Demonstrates acceptable internal consistency (omega = 0.81) and full measurement invariance across sexes.",
+                                dimensions: [
+                                    {
+                                        name: "Intolerance of Uncertainty",
+                                        items: [
+                                            "A small, unforeseen event can spoil everything, even with the best of planning.",
+                                            "I always want to know what the future has in store for me.",
+                                            "Uncertainty keeps me from living a full life",
+                                            "I must get away from all uncertain situations.",
+                                        ],
+                                    },
+                                ],
+                            },
+                            {
                                 name: "Intolerance of Uncertainty Scale - Short Form",
                                 short_name: "IUS-12",
                                 total_items: 12,
