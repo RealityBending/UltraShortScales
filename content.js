@@ -17,6 +17,7 @@ var questionnaireCompendium = [
                                 scale: "4-point Likert (0 = Not at all to 3 = Nearly every day)",
                                 references: ["Kroenke et al. (2009)", "Löwe et al. (2010)"],
                                 notes: "Widely used ultra-brief screener combining PHQ-2 and GAD-2.",
+                                keywords: ["mental health", "screening", "primary care", "mood", "anhedonia", "psychiatry", "ultrabrief"],
                                 dimensions: [
                                     {
                                         name: "Depression (PHQ-2)",
@@ -30,12 +31,20 @@ var questionnaireCompendium = [
                             },
                             {
                                 name: "Cambridge Depersonalization Scale - 2-item adaptation",
-                                short_name: "CSD-2",
+                                short_name: "CDS-2",
                                 total_items: 2,
                                 instructions: "Over the last 2 weeks, how often have you been bothered by any of the following problems?",
                                 scale: "4-points Likert. Not at all = 0/Several days = 1/More than half the days = 2/Nearly every day = 3.",
                                 references: ["Michal et al. (2011)"],
                                 notes: "Cambridge Depersonalization Scale (2-item version).",
+                                keywords: [
+                                    "dissociation",
+                                    "derealization",
+                                    "unreality",
+                                    "estrangement",
+                                    "detachment",
+                                    "dissociative disorder",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Depersonalization",
@@ -53,6 +62,7 @@ var questionnaireCompendium = [
                                 scale: "4-point Likert",
                                 references: ["Brailovskaia et al. (2024)"],
                                 notes: "One-item screens for depression, anxiety, and stress based on the DASS-21 subscales.",
+                                keywords: ["DASS-21", "visual analog", "bubble scale", "single item", "mood", "ultra-short"],
                                 dimensions: [
                                     { name: "Depression", items: ["Depression"] },
                                     { name: "Anxiety", items: ["Anxiety"] },
@@ -66,6 +76,7 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert (1 = Not at all to 5 = Extremely)",
                                 references: ["Lang et al. (2012)"],
                                 notes: "A 2-item ultra-short Posttraumatic Stress Disorder Checklist (PCL-2). Maintains high sensitivity.",
+                                keywords: ["trauma", "PTSD", "post-traumatic", "intrusion", "flashback", "hyperarousal", "stressor"],
                                 dimensions: [
                                     {
                                         name: "Posttraumatic Stress",
@@ -89,6 +100,14 @@ var questionnaireCompendium = [
                                 scale: "11-point scale (0 = Terrible to 10 = Excellent)",
                                 references: ["Snyder et al. (2018)"],
                                 notes: "Possesses excellent concurrent criterion validity and tracks well with longer scales like the PSQI.",
+                                keywords: [
+                                    "insomnia",
+                                    "fatigue",
+                                    "rest",
+                                    "Pittsburgh Sleep Quality Index",
+                                    "sleep disturbance",
+                                    "sleep hygiene",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Sleep Quality",
@@ -104,6 +123,14 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert (1 = Not at all to 5 = Very much)",
                                 references: ["Elo et al. (2003)"],
                                 notes: "Widely used in occupational health and population studies.",
+                                keywords: [
+                                    "work stress",
+                                    "tension",
+                                    "nervousness",
+                                    "restlessness",
+                                    "population survey",
+                                    "workplace wellbeing",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Stress Symptoms",
@@ -121,6 +148,14 @@ var questionnaireCompendium = [
                                 scale: "5-point ordinal (Excellent, Very good, Good, Fair, Poor)",
                                 references: ["DeSalvo et al. (2006)", "Idler & Benyamini (1997)"],
                                 notes: "Perhaps the most thoroughly validated single item in epidemiology and psychology.",
+                                keywords: [
+                                    "global health",
+                                    "mortality",
+                                    "subjective health",
+                                    "overall health",
+                                    "general health",
+                                    "health status",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Self-Rated Health",
@@ -136,6 +171,14 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert (1 = Strongly Disagree to 5 = Strongly Agree)",
                                 references: ["Smith et al. (1995)", "Ehlers et al. (2025)"],
                                 notes: "Assesses domain-specific self-efficacy focused on health management.",
+                                keywords: [
+                                    "self-efficacy",
+                                    "health behavior",
+                                    "chronic illness",
+                                    "health control",
+                                    "mastery",
+                                    "health locus of control",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Health Competence",
@@ -159,6 +202,15 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert (1 = Never to 5 = Always)",
                                 references: ["Brand et al. (2024)"],
                                 notes: "Borderline ultra-short; included for completeness.",
+                                keywords: [
+                                    "interoception",
+                                    "somatic awareness",
+                                    "body signals",
+                                    "autonomic nervous system",
+                                    "heartbeat",
+                                    "visceral",
+                                    "physical sensations",
+                                ],
                                 dimensions: [],
                             },
                             {
@@ -169,6 +221,14 @@ var questionnaireCompendium = [
                                 scale: "7-point Likert",
                                 references: ["Preece et al. (2023)"],
                                 notes: "",
+                                keywords: [
+                                    "alexithymia",
+                                    "identifying feelings",
+                                    "describing feelings",
+                                    "emotional awareness",
+                                    "emotional processing",
+                                    "emotional blindness",
+                                ],
                                 dimensions: [],
                             },
                         ],
@@ -188,6 +248,14 @@ var questionnaireCompendium = [
                                 instructions: "Read each statement and indicate how characteristic it is of you.",
                                 scale: "5-point Likert",
                                 references: ["Veilleux et al. (2024)"],
+                                keywords: [
+                                    "affect",
+                                    "emotional sensitivity",
+                                    "emotional intensity",
+                                    "mood lability",
+                                    "affect dysregulation",
+                                    "emotional response",
+                                ],
                                 dimensions: [],
                             },
                             {
@@ -197,6 +265,13 @@ var questionnaireCompendium = [
                                 instructions: "Please indicate how often the following statements apply to you.",
                                 scale: "5-point Likert (1 = Almost never to 5 = Almost always)",
                                 references: ["Kaufman et al. (2016)", "Dan-Glauser & Quartier"],
+                                keywords: [
+                                    "affect regulation",
+                                    "emotional dysregulation",
+                                    "impulse control",
+                                    "emotion management",
+                                    "distress tolerance",
+                                ],
                                 dimensions: [
                                     { name: "Non-Acceptance", items: ["When I'm upset, I become angry with myself for feeling that way."] },
                                     { name: "Impulse", items: ["When I'm upset, I become out of control."] },
@@ -217,6 +292,13 @@ var questionnaireCompendium = [
                                     "We would like to ask you questions about your emotional life, in particular, how you control your emotions.",
                                 scale: "7-point Likert",
                                 references: ["Valenti & Faraci (2025)"],
+                                keywords: [
+                                    "cognitive reappraisal",
+                                    "expressive suppression",
+                                    "emotion management",
+                                    "affect regulation",
+                                    "Gross",
+                                ],
                                 dimensions: [],
                             },
                             {
@@ -226,6 +308,14 @@ var questionnaireCompendium = [
                                 instructions: "How do you generally think when you experience negative or unpleasant events?",
                                 scale: "5-point Likert",
                                 references: ["Garnefski & Kraaij (2006)", "Saetren et al. (2024)"],
+                                keywords: [
+                                    "cognitive coping",
+                                    "rumination",
+                                    "catastrophizing",
+                                    "positive refocusing",
+                                    "perspective-taking",
+                                    "blaming others",
+                                ],
                                 dimensions: [],
                             },
                         ],
@@ -241,6 +331,15 @@ var questionnaireCompendium = [
                                 scale: "4-point Likert (1 = I haven't been doing this at all to 4 = I've been doing this a lot)",
                                 references: ["Carver (1997)"],
                                 notes: "Contains 28 items measuring 14 distinct coping dimensions. 2 items per dimension.",
+                                keywords: [
+                                    "stress management",
+                                    "problem-solving",
+                                    "social support seeking",
+                                    "religious coping",
+                                    "avoidance",
+                                    "Carver",
+                                    "distraction",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Self-distraction",
@@ -341,6 +440,16 @@ var questionnaireCompendium = [
                                 scale: "9-point Likert",
                                 references: [],
                                 notes: "Measures 20 specific defense mechanisms (2 items each) rolling up into Mature, Neurotic, and Immature styles.",
+                                keywords: [
+                                    "ego defenses",
+                                    "psychodynamic",
+                                    "sublimation",
+                                    "repression",
+                                    "projection",
+                                    "rationalization",
+                                    "splitting",
+                                    "regression",
+                                ],
                                 dimensions: [
                                     { name: "Mature", items: [] },
                                     { name: "Neurotic", items: [] },
@@ -355,6 +464,16 @@ var questionnaireCompendium = [
                                 scale: "7-point Likert",
                                 references: [],
                                 notes: "Measures three dimensions of psychological flexibility.",
+                                keywords: [
+                                    "ACT",
+                                    "acceptance and commitment therapy",
+                                    "mindfulness",
+                                    "defusion",
+                                    "committed action",
+                                    "Hayes",
+                                    "values-based",
+                                    "third wave CBT",
+                                ],
                                 dimensions: [
                                     { name: "Openness to Experience", items: [] },
                                     { name: "Behavioral Awareness", items: [] },
@@ -369,6 +488,14 @@ var questionnaireCompendium = [
                                 scale: "7-point Likert (1 = Never true to 7 = Always true)",
                                 references: ["Bond et al. (2011)"],
                                 notes: "Standard measure for experiential avoidance and psychological inflexibility.",
+                                keywords: [
+                                    "ACT",
+                                    "acceptance and commitment therapy",
+                                    "avoidance coping",
+                                    "thought suppression",
+                                    "Hayes",
+                                    "values-based action",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Psychological Inflexibility",
@@ -393,6 +520,16 @@ var questionnaireCompendium = [
                                 scale: "5-point scale (0 = Not true at all to 4 = True nearly all the time)",
                                 references: ["Vaishnavi et al. (2007)"],
                                 notes: "Heavily validated measure of 'bounce-back' adaptability.",
+                                keywords: [
+                                    "hardiness",
+                                    "bounce back",
+                                    "recovery",
+                                    "adversity",
+                                    "grit",
+                                    "toughness",
+                                    "adaptation",
+                                    "stress recovery",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Resilience",
@@ -416,6 +553,15 @@ var questionnaireCompendium = [
                                 scale: "6-point Likert (1 = Strongly disagree to 6 = Strongly agree)",
                                 references: ["Valencia et al. (2025)"],
                                 notes: "Ultra-brief, unidimensional version of the IUS derived from the IUS-12. Demonstrates acceptable internal consistency (omega = 0.81) and full measurement invariance across sexes.",
+                                keywords: [
+                                    "worry",
+                                    "anxiety",
+                                    "GAD",
+                                    "uncertainty tolerance",
+                                    "future orientation",
+                                    "ambiguity",
+                                    "anticipatory anxiety",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Intolerance of Uncertainty",
@@ -435,6 +581,15 @@ var questionnaireCompendium = [
                                 instructions: "Please rate the extent to which you agree with each of the following statements.",
                                 scale: "5-point Likert",
                                 references: ["Carleton et al. (2007)"],
+                                keywords: [
+                                    "worry",
+                                    "anxiety",
+                                    "GAD",
+                                    "uncertainty tolerance",
+                                    "ambiguity",
+                                    "anticipatory anxiety",
+                                    "inhibitory anxiety",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Prospective Anxiety",
@@ -468,6 +623,14 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert",
                                 references: [],
                                 notes: "Unidimensional scale, shorter and more modern than Budner scale.",
+                                keywords: [
+                                    "need for closure",
+                                    "complexity tolerance",
+                                    "novelty",
+                                    "cognitive style",
+                                    "tolerance for ambiguity",
+                                    "uncertainty",
+                                ],
                                 dimensions: [{ name: "Ambiguity Tolerance", items: [] }],
                             },
                             {
@@ -477,6 +640,16 @@ var questionnaireCompendium = [
                                 scale: "6-point Likert",
                                 references: ["Sapp & Harrod (1993)"],
                                 notes: "Brief version of Levenson's locus of control scale.",
+                                keywords: [
+                                    "locus of control",
+                                    "internal locus",
+                                    "external locus",
+                                    "fate",
+                                    "fatalism",
+                                    "autonomy",
+                                    "control beliefs",
+                                    "self-determination",
+                                ],
                                 dimensions: [
                                     { name: "Internal", items: [] },
                                     { name: "Powerful Others", items: [] },
@@ -490,6 +663,15 @@ var questionnaireCompendium = [
                                 scale: "6-point Likert",
                                 references: ["Rammstedt & Grüning (2023)"],
                                 notes: "Brief version of Dweck's mindset measure.",
+                                keywords: [
+                                    "Dweck",
+                                    "fixed mindset",
+                                    "intelligence beliefs",
+                                    "learning orientation",
+                                    "implicit theories",
+                                    "effort",
+                                    "malleable intelligence",
+                                ],
                                 dimensions: [{ name: "Growth Mindset", items: [] }],
                             },
                         ],
@@ -509,6 +691,16 @@ var questionnaireCompendium = [
                                 instructions: "Please answer the following question about your life.",
                                 scale: "11-point scale (0 = Totally dissatisfied to 10 = Totally satisfied)",
                                 references: ["Jovanović & Lazić (2020)"],
+                                keywords: [
+                                    "happiness",
+                                    "wellbeing",
+                                    "well-being",
+                                    "SWB",
+                                    "positive affect",
+                                    "flourishing",
+                                    "contentment",
+                                    "subjective well-being",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Life Satisfaction",
@@ -523,6 +715,16 @@ var questionnaireCompendium = [
                                 instructions: "Please rate your overall happiness.",
                                 scale: "11-point scale (0 = Extremely unhappy to 10 = Extremely happy)",
                                 references: ["Abdel-Khalek (2006)"],
+                                keywords: [
+                                    "wellbeing",
+                                    "well-being",
+                                    "life satisfaction",
+                                    "positive affect",
+                                    "mood",
+                                    "joy",
+                                    "contentment",
+                                    "hedonic",
+                                ],
                                 dimensions: [{ name: "Happiness", items: ["In general, how happy or unhappy do you usually feel?"] }],
                             },
                             {
@@ -532,6 +734,7 @@ var questionnaireCompendium = [
                                 scale: "11-point scale",
                                 references: ["Schumann et al. (2023)"],
                                 notes: "Covers global life satisfaction, happiness, and meaningfulness.",
+                                keywords: ["wellbeing", "well-being", "SWB", "purpose", "flourishing", "fulfillment", "quality of life"],
                                 dimensions: [
                                     { name: "Life Satisfaction", items: [] },
                                     { name: "Happiness", items: [] },
@@ -545,6 +748,14 @@ var questionnaireCompendium = [
                                 scale: "Visual analogue / Bubbles",
                                 references: ["Brailovskaia & Margraf (2024)"],
                                 notes: "One-item bubble scales for positive mental health, life satisfaction, and perceived social support.",
+                                keywords: [
+                                    "wellbeing",
+                                    "well-being",
+                                    "visual analog",
+                                    "bubble scale",
+                                    "positive psychology",
+                                    "flourishing",
+                                ],
                                 dimensions: [
                                     { name: "Positive Mental Health", items: [] },
                                     { name: "Life Satisfaction", items: [] },
@@ -574,6 +785,15 @@ var questionnaireCompendium = [
                                     "Here are a number of personality traits that may or may not apply to you. Please indicate the extent to which you agree or disagree with that statement. You should rate the extent to which the pair of traits applies to you, even if one characteristic applies more strongly than the other.",
                                 scale: "7-point Likert (1 = Disagree strongly to 7 = Agree strongly)",
                                 references: ["Gosling et al. (2003)"],
+                                keywords: [
+                                    "FFM",
+                                    "Five Factor Model",
+                                    "personality traits",
+                                    "individual differences",
+                                    "NEO",
+                                    "Big Five",
+                                    "Gosling",
+                                ],
                                 dimensions: [
                                     { name: "Extraversion", items: ["Extraverted, enthusiastic.", "Reserved, quiet. (Reverse)"] },
                                     { name: "Agreeableness", items: ["Sympathetic, warm.", "Critical, quarrelsome. (Reverse)"] },
@@ -599,6 +819,15 @@ var questionnaireCompendium = [
                                     "How well do the following statements describe your personality? I see myself as someone who...",
                                 scale: "5-point Likert (1 = Disagree strongly to 5 = Agree strongly)",
                                 references: ["Rammstedt & John (2007)", "Mastrascusa et al. (2023)"],
+                                keywords: [
+                                    "FFM",
+                                    "Five Factor Model",
+                                    "personality traits",
+                                    "individual differences",
+                                    "Big Five",
+                                    "brief personality",
+                                    "Rammstedt",
+                                ],
                                 dimensions: [
                                     { name: "Extraversion", items: ["...is outgoing, sociable.", "...is reserved. (Reverse)"] },
                                     {
@@ -625,6 +854,16 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert",
                                 references: ["Soto & John (2017)"],
                                 notes: "3 items per domain, better content validity than TIPI/BFI-10.",
+                                keywords: [
+                                    "FFM",
+                                    "Five Factor Model",
+                                    "personality traits",
+                                    "individual differences",
+                                    "Big Five",
+                                    "brief personality",
+                                    "Soto",
+                                    "John",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Extraversion",
@@ -671,6 +910,15 @@ var questionnaireCompendium = [
                                 instructions: "Please indicate the extent to which you agree or disagree with that statement.",
                                 scale: "7-point Likert",
                                 references: ["Gosling et al. (2003)"],
+                                keywords: [
+                                    "FFM",
+                                    "Five Factor Model",
+                                    "personality traits",
+                                    "individual differences",
+                                    "Big Five",
+                                    "single-item per domain",
+                                    "Gosling",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Extraversion",
@@ -712,6 +960,16 @@ var questionnaireCompendium = [
                                 scale: "9-point bipolar scale",
                                 references: ["Woods & Hampson (2005)"],
                                 notes: "Bipolar adjective pairs.",
+                                keywords: [
+                                    "FFM",
+                                    "Five Factor Model",
+                                    "Big Five",
+                                    "personality traits",
+                                    "adjective pairs",
+                                    "brief personality",
+                                    "Woods",
+                                    "Hampson",
+                                ],
                                 dimensions: [],
                             },
                             {
@@ -720,6 +978,15 @@ var questionnaireCompendium = [
                                 instructions: "Describe yourself as you generally are now, not as you wish to be in the future.",
                                 scale: "5-point Likert",
                                 references: ["Donnellan et al. (2006)"],
+                                keywords: [
+                                    "FFM",
+                                    "Five Factor Model",
+                                    "Big Five",
+                                    "personality traits",
+                                    "IPIP",
+                                    "Donnellan",
+                                    "individual differences",
+                                ],
                                 dimensions: [],
                             },
                         ],
@@ -735,6 +1002,16 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert",
                                 references: ["De Vries (2013)"],
                                 notes: "4 items per HEXACO domain.",
+                                keywords: [
+                                    "HEXACO",
+                                    "six-factor model",
+                                    "personality",
+                                    "Ashton",
+                                    "Lee",
+                                    "De Vries",
+                                    "individual differences",
+                                    "honesty",
+                                ],
                                 dimensions: [
                                     { name: "Honesty-Humility", items: [] },
                                     { name: "Emotionality", items: [] },
@@ -752,6 +1029,15 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert",
                                 references: ["Olaru & Jankowsky (2022)"],
                                 notes: "3 items per domain, scalar measurement invariance across ages 16–90.",
+                                keywords: [
+                                    "HEXACO",
+                                    "six-factor model",
+                                    "personality",
+                                    "Ashton",
+                                    "Lee",
+                                    "measurement invariance",
+                                    "individual differences",
+                                ],
                                 dimensions: [],
                             },
                             {
@@ -761,6 +1047,7 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert",
                                 references: [],
                                 notes: "TODO",
+                                keywords: ["HEXACO", "six-factor model", "personality", "IPIP", "individual differences"],
                                 dimensions: [],
                             },
                         ],
@@ -781,6 +1068,18 @@ var questionnaireCompendium = [
                                 scale: "4-point scale (0 = Very false or often false to 3 = Very true or often true)",
                                 references: ["Krueger et al. (2013)", "Anderson et al. (2018)"],
                                 notes: "5 items × 5 domains.",
+                                keywords: [
+                                    "DSM-5",
+                                    "personality disorder",
+                                    "pathological traits",
+                                    "alternative model",
+                                    "AMPD",
+                                    "trait model",
+                                    "maladaptive",
+                                    "Krueger",
+                                    "borderline",
+                                    "antisocial",
+                                ],
                                 dimensions: [
                                     { name: "Negative Affectivity", items: [] },
                                     { name: "Detachment", items: [] },
@@ -801,6 +1100,16 @@ var questionnaireCompendium = [
                                 instructions: "Please answer the following question.",
                                 scale: "7-point Likert",
                                 references: ["Konrath et al. (2014)"],
+                                keywords: [
+                                    "self-love",
+                                    "grandiosity",
+                                    "entitlement",
+                                    "vanity",
+                                    "self-importance",
+                                    "ego",
+                                    "arrogance",
+                                    "dark personality",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Narcissism",
@@ -817,6 +1126,16 @@ var questionnaireCompendium = [
                                 instructions: "Please indicate your degree of agreement or disagreement with each statement.",
                                 scale: "5-point Likert",
                                 references: ["Wehner et al. (2021)"],
+                                keywords: [
+                                    "dark triad",
+                                    "dark personality",
+                                    "manipulation",
+                                    "callousness",
+                                    "impulsivity",
+                                    "antisocial",
+                                    "subclinical",
+                                    "malevolent",
+                                ],
                                 dimensions: [
                                     { name: "Machiavellianism", items: [] },
                                     { name: "Narcissism", items: [] },
@@ -831,6 +1150,17 @@ var questionnaireCompendium = [
                                 scale: "9-point Likert",
                                 references: ["Jonason & Webster (2010)"],
                                 notes: "4 items × 3 dark traits.",
+                                keywords: [
+                                    "dark triad",
+                                    "dark personality",
+                                    "manipulation",
+                                    "callousness",
+                                    "antisocial",
+                                    "subclinical",
+                                    "malevolent",
+                                    "Jonason",
+                                    "Webster",
+                                ],
                                 dimensions: [
                                     { name: "Machiavellianism", items: [] },
                                     { name: "Narcissism", items: [] },
@@ -845,6 +1175,17 @@ var questionnaireCompendium = [
                                 scale: "5-point Likert (1 = Strongly Disagree to 5 = Strongly Agree)",
                                 references: ["Jones & Paulhus (2014)"],
                                 notes: "9 items × 3 dark traits.",
+                                keywords: [
+                                    "dark triad",
+                                    "dark personality",
+                                    "manipulation",
+                                    "callousness",
+                                    "antisocial",
+                                    "subclinical",
+                                    "malevolent",
+                                    "Jones",
+                                    "Paulhus",
+                                ],
                                 dimensions: [
                                     { name: "Machiavellianism", items: [] },
                                     { name: "Narcissism", items: [] },
@@ -858,6 +1199,16 @@ var questionnaireCompendium = [
                                 instructions: "Please indicate your agreement.",
                                 scale: "5-point Likert",
                                 references: ["Heller et al. (2020)"],
+                                keywords: [
+                                    "right-wing authoritarianism",
+                                    "RWA",
+                                    "submission",
+                                    "aggression",
+                                    "conventionalism",
+                                    "political psychology",
+                                    "prejudice",
+                                    "obedience",
+                                ],
                                 dimensions: [{ name: "Authoritarianism", items: [] }],
                             },
                             {
@@ -867,6 +1218,16 @@ var questionnaireCompendium = [
                                 instructions: "Please indicate your level of agreement with these statements.",
                                 scale: "5-point Likert",
                                 references: ["Akat (2025)"],
+                                keywords: [
+                                    "dark tetrad",
+                                    "dark personality",
+                                    "manipulation",
+                                    "callousness",
+                                    "cruelty",
+                                    "antisocial",
+                                    "subclinical",
+                                    "malevolent",
+                                ],
                                 dimensions: [
                                     { name: "Machiavellianism", items: [] },
                                     { name: "Narcissism", items: [] },
@@ -892,6 +1253,16 @@ var questionnaireCompendium = [
                                     "Please take a moment to think about what makes your life and existence feel important and significant to you.",
                                 scale: "7-point Likert (1 = Absolutely Untrue to 7 = Absolutely True)",
                                 references: ["Steger et al. (2006)"],
+                                keywords: [
+                                    "purpose",
+                                    "existential",
+                                    "significance",
+                                    "vitality",
+                                    "eudaimonic",
+                                    "flourishing",
+                                    "fulfillment",
+                                    "coherence",
+                                ],
                                 dimensions: [
                                     { name: "Presence of Meaning", items: [] },
                                     { name: "Search for Meaning", items: [] },
@@ -905,6 +1276,16 @@ var questionnaireCompendium = [
                                 scale: "7-point Likert",
                                 references: ["Schumann et al. (2003)"],
                                 notes: "Outperformed the SOC-3 in reliability and validity.",
+                                keywords: [
+                                    "Antonovsky",
+                                    "SOC",
+                                    "salutogenesis",
+                                    "comprehensibility",
+                                    "manageability",
+                                    "stress resistance",
+                                    "well-being",
+                                    "resilience",
+                                ],
                                 dimensions: [{ name: "Sense of Coherence", items: [] }],
                             },
                         ],
@@ -920,6 +1301,16 @@ var questionnaireCompendium = [
                                 scale: "6-point Likert (1 = Almost never to 6 = Almost always)",
                                 references: ["Mrazek et al. (2013)"],
                                 notes: "Trait-like.",
+                                keywords: [
+                                    "daydreaming",
+                                    "off-task thinking",
+                                    "attention",
+                                    "focus",
+                                    "distraction",
+                                    "task-unrelated thought",
+                                    "spontaneous thought",
+                                    "Mrazek",
+                                ],
                                 dimensions: [{ name: "Mind Wandering", items: [] }],
                             },
                         ],
@@ -934,6 +1325,17 @@ var questionnaireCompendium = [
                                 instructions: "Consider where you stand in society.",
                                 scale: "10-rung visual ladder scale",
                                 references: ["Adler et al. (2000)"],
+                                keywords: [
+                                    "socioeconomic status",
+                                    "SES",
+                                    "social hierarchy",
+                                    "inequality",
+                                    "class",
+                                    "prestige",
+                                    "rank",
+                                    "Adler",
+                                    "ladder",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Subjective Social Status",
@@ -966,6 +1368,14 @@ var questionnaireCompendium = [
                                     "Please read each of the following paragraphs and rate the extent to which each describes your general relationship style.",
                                 scale: "7-point Likert",
                                 references: ["Bartholomew & Horowitz (1991)"],
+                                keywords: [
+                                    "adult attachment",
+                                    "Bartholomew",
+                                    "romantic relationships",
+                                    "fearful avoidant",
+                                    "closeness",
+                                    "intimacy",
+                                ],
                                 dimensions: [
                                     { name: "Secure", items: [] },
                                     { name: "Dismissing", items: [] },
@@ -980,6 +1390,16 @@ var questionnaireCompendium = [
                                 instructions: "The following statements concern how you feel in romantic relationships.",
                                 scale: "7-point Likert",
                                 references: ["Wei et al. (2007)"],
+                                keywords: [
+                                    "adult attachment",
+                                    "romantic attachment",
+                                    "Hazan",
+                                    "Shaver",
+                                    "intimacy",
+                                    "closeness",
+                                    "abandonment",
+                                    "attachment style",
+                                ],
                                 dimensions: [
                                     { name: "Anxiety", items: [] },
                                     { name: "Avoidance", items: [] },
@@ -992,6 +1412,15 @@ var questionnaireCompendium = [
                                 instructions: "Rate how characteristic the following statements are of you.",
                                 scale: "5-point Likert",
                                 references: [],
+                                keywords: [
+                                    "close relationships",
+                                    "vulnerability",
+                                    "emotional closeness",
+                                    "connection",
+                                    "attachment",
+                                    "loss",
+                                    "self-disclosure",
+                                ],
                                 dimensions: [
                                     { name: "Fear of Losing the Self", items: [] },
                                     { name: "Fear of Losing the Other", items: [] },
@@ -1009,6 +1438,15 @@ var questionnaireCompendium = [
                                 instructions: "How often do you feel the way described below?",
                                 scale: "3-point Likert (1 = Hardly Ever to 3 = Often)",
                                 references: ["Hughes et al. (2004)"],
+                                keywords: [
+                                    "social isolation",
+                                    "disconnection",
+                                    "social connection",
+                                    "companionship",
+                                    "belonging",
+                                    "social support",
+                                    "UCLA",
+                                ],
                                 dimensions: [
                                     {
                                         name: "Loneliness",
@@ -1027,6 +1465,16 @@ var questionnaireCompendium = [
                                 instructions: "Below is a collection of statements about your everyday experience.",
                                 scale: "5-point Likert",
                                 references: ["Hisham et al. (2025)"],
+                                keywords: [
+                                    "social media",
+                                    "FOMO",
+                                    "social comparison",
+                                    "belonging",
+                                    "envy",
+                                    "Instagram",
+                                    "smartphone",
+                                    "online social",
+                                ],
                                 dimensions: [{ name: "Fear of Missing Out", items: [] }],
                             },
                         ],
@@ -1041,6 +1489,15 @@ var questionnaireCompendium = [
                                 instructions: "Please rate how strongly you agree or disagree with the following statements.",
                                 scale: "5-point Likert",
                                 references: [],
+                                keywords: [
+                                    "codependency",
+                                    "enabling",
+                                    "pleasing",
+                                    "enmeshment",
+                                    "caretaking",
+                                    "relationship dependency",
+                                    "boundary issues",
+                                ],
                                 dimensions: [
                                     { name: "Emotional Suppression", items: [] },
                                     { name: "Interpersonal Control", items: [] },
@@ -1055,6 +1512,15 @@ var questionnaireCompendium = [
                                     "Please rate your agreement with the following statements regarding your approach to others' cultural backgrounds.",
                                 scale: "5-point Likert",
                                 references: ["Coleman et al. (2024)", "Hook et al. (2013)"],
+                                keywords: [
+                                    "multiculturalism",
+                                    "diversity",
+                                    "cultural competence",
+                                    "Hook",
+                                    "intercultural",
+                                    "cultural sensitivity",
+                                    "cultural awareness",
+                                ],
                                 dimensions: [
                                     { name: "Positive Humility", items: [] },
                                     { name: "Negative Humility", items: [] },
@@ -1068,6 +1534,15 @@ var questionnaireCompendium = [
                                     "At times all children misbehave or do things that could be harmful. Please indicate how you deal with your child.",
                                 scale: "7-point bipolar scale",
                                 references: ["Schmalbach et al. (2026)", "Arnold et al."],
+                                keywords: [
+                                    "child rearing",
+                                    "discipline",
+                                    "parenting style",
+                                    "harsh parenting",
+                                    "permissive parenting",
+                                    "authoritative",
+                                    "coercive",
+                                ],
                                 dimensions: [
                                     { name: "Overreactivity", items: [] },
                                     { name: "Laxness", items: [] },
@@ -1090,6 +1565,14 @@ var questionnaireCompendium = [
                                 instructions: "Please answer the following question about your current job.",
                                 scale: "Varying Likert scales (typically 5-point or 7-point)",
                                 references: ["Wanous et al. (1997)"],
+                                keywords: [
+                                    "work satisfaction",
+                                    "organizational commitment",
+                                    "workplace",
+                                    "employee attitude",
+                                    "job attitude",
+                                    "occupational",
+                                ],
                                 dimensions: [{ name: "Global Job Satisfaction", items: ["Overall, how satisfied are you with your job?"] }],
                             },
                         ],
@@ -1104,10 +1587,96 @@ var questionnaireCompendium = [
                                 instructions: "Please read each statement carefully and decide if you ever feel this way about your job.",
                                 scale: "7-point Likert (0 = Never to 6 = Always/Every day)",
                                 references: ["Schaufeli et al. (2019)"],
+                                keywords: [
+                                    "burnout",
+                                    "work passion",
+                                    "employee engagement",
+                                    "Schaufeli",
+                                    "occupational health",
+                                    "workplace",
+                                    "work motivation",
+                                ],
                                 dimensions: [
                                     { name: "Vigor", items: ["At my work, I feel bursting with energy."] },
                                     { name: "Dedication", items: ["I am enthusiastic about my job."] },
                                     { name: "Absorption", items: ["I am immersed in my work."] },
+                                ],
+                            },
+                        ],
+                    },
+                ],
+            },
+            {
+                category: "Response Styles and Validity",
+                groups: [
+                    {
+                        group: "Social desirability and impression management",
+                        measures: [
+                            {
+                                name: "Brief Social Desirability Scale",
+                                short_name: "BSDS",
+                                total_items: 4,
+                                instructions: "Please read each question and indicate your response.",
+                                scale: "Dichotomous (Yes / No)",
+                                references: ["Haghighat (2007)"],
+                                notes: "A 4-item ultra-brief measure of social desirability designed to reduce participant fatigue while maintaining validity in detecting defensiveness and impression management.",
+                                keywords: [
+                                    "faking good",
+                                    "response bias",
+                                    "lie scale",
+                                    "impression management",
+                                    "survey validity",
+                                    "acquiescence",
+                                    "self-presentation",
+                                    "defensiveness",
+                                ],
+                                dimensions: [
+                                    {
+                                        name: "Social Desirability",
+                                        items: [
+                                            "Do you always practice what you preach?",
+                                            "Are you always willing to admit it when you make a mistake?",
+                                            "Do you ever feel just a little bit jealous of the good luck of others? (Reverse)",
+                                            "Have you ever taken advantage of anyone? (Reverse)",
+                                        ],
+                                    },
+                                ],
+                            },
+                            {
+                                name: "Social Desirability-Gamma Short Scale",
+                                short_name: "KSE-G",
+                                total_items: 6,
+                                instructions:
+                                    "The following statements may apply more or less to you personally. Please indicate to what extent they apply to you.",
+                                scale: "5-point Likert (1 = Doesn't apply at all to 5 = Applies completely)",
+                                references: ["Kemper et al. (2014)", "Nießen et al. (2019)"],
+                                notes: "A 6-item short scale isolating the 'Gamma' factor of social desirability (conscious impression management). Derived from Paulhus's framework.",
+                                keywords: [
+                                    "faking good",
+                                    "response bias",
+                                    "impression management",
+                                    "Paulhus",
+                                    "self-presentation",
+                                    "survey validity",
+                                    "Kemper",
+                                ],
+                                dimensions: [
+                                    {
+                                        name: "Exaggerating Positive Qualities (PQ+)",
+                                        items: [
+                                            "In an argument, I always remain objective and stick to the facts.",
+                                            "Even if I am feeling stressed, I am always friendly and polite to others.",
+                                            "When talking to someone, I always listen carefully to what the other person says.",
+                                        ],
+                                    },
+                                    {
+                                        name: "Minimizing Negative Qualities (NQ-)",
+                                        items: [
+                                            "It has happened that I have taken advantage of someone in the past.",
+                                            "I have occasionally thrown litter away in the countryside or on to the road.",
+                                            "Sometimes I only help people if I expect to get something in return.",
+                                        ],
+                                    },
                                 ],
                             },
                         ],

@@ -93,6 +93,17 @@ function getMeasureAncestor(node) {
     return current
 }
 
+function buildMeasureSearchText(id) {
+    const node = getNode(id)
+    if (!node) return ""
+    const dims = (node.data.dimensions || []).map((d) => d.name + " " + (d.items || []).join(" ")).join(" ")
+    const refs = (node.references || []).join(" ")
+    const kws = (node.data.keywords || []).join(" ")
+    const group = getNode(node.parentId)
+    const category = group ? getNode(group.parentId) : null
+    return [node.label, node.shortName, dims, refs, kws, group?.label, category?.label].join(" ").toLowerCase()
+}
+
 function buildHierarchyModel() {
     hierarchy.nodes.clear()
 
@@ -459,9 +470,7 @@ function filterTable(q) {
     const visibleMeasures = new Set()
 
     document.querySelectorAll(".row-measure").forEach((row) => {
-        const name = (row.querySelector(".measure-name")?.textContent || "").toLowerCase()
-        const abbr = (row.querySelector(".short-name")?.textContent || "").toLowerCase()
-        if (name.includes(q) || abbr.includes(q)) {
+        if (buildMeasureSearchText(row.dataset.id).includes(q)) {
             row.style.display = ""
             visibleMeasures.add(row.dataset.id)
 
